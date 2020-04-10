@@ -1,0 +1,3 @@
+DROP DATABASE customerDB;
+
+CREATE DATABASE  customerDB;
