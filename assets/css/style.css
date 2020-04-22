@@ -1,0 +1,185 @@
+/* Main CSS Custom Styles & Rules */
+
+header, footer {background-color: #333; color: #fff; width: 100%; font-family: 'Open Sans', sans-serif;}
+#logo {font-size: 1.5em; padding-top: .5em;}
+#content {font-family: 'Montserrat', sans-serif;}
+#content .container-fluid {padding-right: 0; padding-left: 0;}
+/*#content iframe {max-width: 100%;}*/
+footer {text-align: center; padding: 2em;}
+.right-side, .left-side {padding: 2em;}
+h1, h2, h3 {margin-bottom: 20px;}
+
+.img-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button#demoBtn {
+  font-size: 2em;
+}
+
+form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    width: 35%;
+  }
+
+form.example button {
+    width: 15%;
+    padding: 10px;
+    background: rgb(193, 198, 202);
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none; 
+    cursor: pointer;
+  }
+
+  .padfix {padding: 0;}
+  .demographics-table {
+    display: table;
+    width: 100%;
+    display: none;
+  }
+  .cell-output {
+    border: 1px solid black;
+    display: table-cell;
+  }
+
+  .bbicon {
+    height: 30px;
+    width: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+@media (max-width: 650px) {
+    #logo {font-size: 1.1em; padding-top: 1em;}
+    nav {padding-top: .5em;}
+    nav a:hover {text-decoration: none;}
+}
+
+#map{
+    height:400px;
+    width:100%;
+  }
+
+  #about {padding-top: 30px; padding-bottom: 30px;}
+  #about h1, #about h2, #about h3, #about h4 {text-align: center;}
+
+  #contact {padding-top: 30px; padding-bottom: 30px; text-align: center;}
+  #contact h1, #contact h2, #contact h3, #contact h4 {text-align: center;}
+
+  #contact-form {
+    width: 100%;
+    max-width: 800px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #333;
+    padding: 1.5em;
+  }
+
+  #contact-form input[type=submit], #sendform {
+    padding: 1em; 
+    background-color: #14679e;
+    color: #fff;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    width: 100%;
+    max-width: 250px;
+  }
+
+  #contact-form input[type=submit]:hover {opacity: .8;}
+
+  input[type=text], input[type=email], input[type=number] {
+
+  }
+
+    /* Mobile Navigation Menu Styles */
+
+    nav ul li {list-style-type: none;}
+
+    ul#menu {
+      display: none;
+    }
+    ul#menu li a {
+      width: 100%;
+      display: block;
+      color: #fff;
+      font-size: 1em;
+      transition: background 0.2s;
+      text-decoration: none;
+    }
+    ul#menu a:hover {
+      background-color: #303030;
+      cursor: pointer;
+    }
+
+    @media screen and (max-width: 1023px) {
+      ul#menu li a {padding: 1em 1.3em;}
+    }
+    
+    @media screen and (min-width: 1024px) {
+      ul#menu li a {padding: 1.5em 1.6em;}
+
+      .hamburger-container {
+        display: none;
+      }
+    
+      .nav ul#menu {
+        display: inline;
+      }
+      .nav ul#menu li {
+        display: inline-block;
+        margin-right: -5px;
+      }
+    }
+    ul.hamburger li {
+      height: 5px;
+      background: #fff;
+      content: "";
+      position: relative;
+      transition: 0.25s ease-in-out;
+      list-style-type: none;
+    }
+    
+    .hidden {
+      opacity: 0;
+    }
+    
+    .rot45deg {
+      transform: rotate(45deg);
+      top: 10px !important;
+    }
+    
+    .rot-45deg {
+      transform: rotate(-45deg);
+    }
+    
+    ul.hamburger {
+      display: block;
+    }
+    ul.hamburger li:nth-child(1) {
+      top: 0;
+    }
+    ul.hamburger li:nth-child(2) {
+      top: 5px;
+    }
+    ul.hamburger li:nth-child(3) {
+      top: 10px;
+    }
+    
+    .hamburger-container {
+      width: 45px;
+      margin: 1.2em 1.6em;
+      height: 30px;
+      cursor: pointer;
+      float: right;
+    }
+    
