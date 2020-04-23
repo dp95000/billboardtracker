@@ -16,18 +16,23 @@ module.exports = function(sequealize, DataTypes) {
             allowNull: true,
         },
 
+        phone: {
+            type: DataTypes.STRING,
+            allowNull: true,
+        },
+
         signs: {
             type: DataTypes.INTEGER,
             allowNull: false,
                 
             },
-            contract: {
+        contract: {
                 type: DataTypes.ENUM,
                 values: ["3 months", "6 months", "12 months"],
 
             },
 
-            rent: {
+         rent: {
                 type: DataTypes.INTEGER,
                 allowNull: false,
             },
