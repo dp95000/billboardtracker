@@ -1,5 +1,5 @@
-create database top_songsDB;
-use top_songsDB;
+create database billboardDB;
+use billboardDB;
 CREATE TABLE billboards (
   id INT NOT NULL AUTO_INCREMENT,
   lat DECIMAL(10,4) NULL,
