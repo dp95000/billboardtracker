@@ -1,5 +1,6 @@
 # group-project-3
 Group Project 3 - Updated Billboard App
+<<<<<<< HEAD
 
 API: "https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places"
 
@@ -39,3 +40,5 @@ API: "https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing
 - **Ian Clark** - _Full-Stack Development - [Ian Clark](https://github.com/ianclark226 "Ian Clark")
 
   
+=======
+>>>>>>> 6cd0786d5482971740ca5d6659f992a1ab4bb21b

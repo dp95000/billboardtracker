@@ -102,7 +102,10 @@ dist
 
 # TernJS port file
 .tern-port
+<<<<<<< HEAD
 
 #API
 
 
+=======
+>>>>>>> 6cd0786d5482971740ca5d6659f992a1ab4bb21b
