@@ -7,10 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
     "start:prod": "node server.js",
-    "start:dev": "concurrently \"nodemon --ignore './Billboard/client/*'\" \"npm run client\" ",
-    "client": "cd ./Billboard/client && npm run start",
-    "install": "cd ./Billboard/client && npm install",
-    "build": "cd ./Billboard/client && npm run build"
+    "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\" ",
+    "client": "cd ./BillBoard/client && npm run start",
+    "install": "cd ./BillBoard/client && npm install",
+    "build": "cd ./BillBoard/client && npm run build"
   },
   "repository": {
     "type": "git",
