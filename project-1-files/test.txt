@@ -1,3 +1,0 @@
-Text file to test first commit.
-
--Commit Checked : Didier ✔
