@@ -1,11 +1,11 @@
 import React from 'react';
 
 export default function Contact() {
-    return(
+    return (
         <div>
             <section id="content">
-                <div class="row">
-                    <div class="columns medium-12" id="contact">
+                <div className="row">
+                    <div className="columns medium-12" id="contact">
                         <h3>Contact Us</h3>
                         <p>If you have any questions about this site or the services we offer, please don't hesitate to reach out to us.</p>
                         <br />
