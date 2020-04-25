@@ -39,7 +39,7 @@ module.exports = (sequelize, DataTypes) => {
             },
 
 
-            avalible: {
+            available: {
                 type: DataTypes.ENUM,
                 VALUES: ["Yes", "No"],
             },
@@ -61,7 +61,7 @@ module.exports = (sequelize, DataTypes) => {
            
 
         });
-        billboards.associate =models => {
+        billboards.associate = models => {
            
         }
         return billboards;

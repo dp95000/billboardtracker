@@ -1,7 +1,7 @@
 //Sequilize the database and connection
 "use strict";
 
-const fs = requre("fs");
+const fs = require("fs");
 const path = require("path");
 const Sequelize = require("sequelize");
 const basename = path.basename(module.filename);

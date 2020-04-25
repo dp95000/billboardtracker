@@ -1,6 +1,6 @@
-module.exports = function(sequealize, DataTypes) {
+module.exports = function(sequelize, DataTypes) {
 
-    const Customer = sequealize.define("Customer", {
+    const Customer = sequelize.define("Customer", {
         first_name: {
             type: DataTypes.STRING,
             allowNull: true,
