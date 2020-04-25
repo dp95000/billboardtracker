@@ -28,7 +28,7 @@ API: "https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing
   - passport
   - passport-local
   - sequelize
-  - sequerlize cli
+  - sequelize cli
   - nodemailer
   
   ## Contributers
