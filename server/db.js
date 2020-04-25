@@ -12,6 +12,9 @@ const Sequelize = new Sequelize("", "postgres", "", {
         idle: 10000
     }
 }); 
+
+//Using Database
+const db =require('./config/database'); 
 //Connection Testing
 db.authenticate()
 .then(() => console.log('Database connected...'))
