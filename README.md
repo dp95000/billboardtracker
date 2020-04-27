@@ -28,11 +28,7 @@ API: "https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing
   - passport
   - passport-local
   - sequelize
-<<<<<<< HEAD
-  - sequelize cli
-=======
   - sequerlize cli
->>>>>>> 757c71acd7bd08136f749051818bfaeedad4a146
   - nodemailer
   
   ## Contributers
@@ -43,8 +39,5 @@ API: "https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing
 - **Ian Clark** - _Full-Stack Development - [Ian Clark](https://github.com/ianclark226 "Ian Clark")
 
   
-<<<<<<< HEAD
-=======
->>>>>>> 6cd0786d5482971740ca5d6659f992a1ab4bb21b
 =======
 >>>>>>> 757c71acd7bd08136f749051818bfaeedad4a146
