@@ -21,8 +21,7 @@ export default function App() {
   return (
     <div>
       <Header></Header>
-      <Main></Main>
-      <Footer></Footer>
+
 
 
       <ReactMapGL
@@ -35,6 +34,8 @@ export default function App() {
       >
       </ReactMapGL>
 
+      <Main></Main>
+      <Footer></Footer>
 
 
     </div>
