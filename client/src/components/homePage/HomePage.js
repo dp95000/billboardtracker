@@ -4,17 +4,6 @@ export default function HomePage() {
     return (
         <div>
             <section id="content">
-                {/* Map Section */}
-                <div className="container-fluid">
-                    <div className="row expanded">
-                        <div className="columns medium-12 padfix">
-                            <div id="map"></div>
-                            <script src="billboardmap.js"></script>
-                        </div>
-                    </div>
-                </div>
-                {/* End of Map Section */}
-
                 <div className="container-fluid">
                     <div className="row">
                         <div className="columns medium-6 left-side">
