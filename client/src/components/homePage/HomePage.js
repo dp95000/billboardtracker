@@ -1,9 +1,34 @@
-import React from 'react';
+import React, { useState } from 'react';
+import ReactMapGL, { Marker } from "react-map-gl";
+
 
 export default function HomePage() {
+
+    const [viewport, setViewport] = useState({
+        latitude: 39.9527237,
+        longitude: -75.1635262,
+        zoom: 10,
+        width: '100vw',
+        height: "100vh"
+    })
+
     return (
+
+
+
         <div>
             <section id="content">
+
+                <ReactMapGL
+                    {...viewport}
+                    mapboxApiAccessToken={process.env.REACT_APP_BUILDBOARD}
+                    mapStyle="mapbox://styles/ianclark226/ck9biyq6q02qp1jmg9t1ao42t"
+                    onViewportChange={viewport => {
+                        setViewport(viewport);
+                    }}
+                >
+                </ReactMapGL>
+
                 <div className="container-fluid">
                     <div className="row">
                         <div className="columns medium-6 left-side">
