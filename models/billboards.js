@@ -1,6 +1,6 @@
-module.exports = function(sequealize, DataTypes) {
+module.exports = function(sequelize, DataTypes) {
 
-    const billboards = sequealize.define("billboards", {
+    const billboards = sequelize.define("billboards", {
         id: {
             type: DataTypes.INTEGER,
             allowNull: true,
