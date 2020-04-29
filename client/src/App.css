@@ -101,6 +101,7 @@ form.example button {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+
   }
 
 @media (max-width: 650px) {
@@ -122,8 +123,9 @@ form.example button {
     width:100%;
   }
 
-  #about {padding-top: 30px; padding-bottom: 30px;}
+  #about, #login {padding-top: 30px; padding-bottom: 30px;}
   #about h1, #about h2, #about h3, #about h4 {text-align: center;}
+  #login h1, #login, #login h3, #login h4 {text-align: center;}
 
   #contact {padding-top: 30px; padding-bottom: 30px; text-align: center;}
   #contact h1, #contact h2, #contact h3, #contact h4 {text-align: center;}
@@ -165,7 +167,7 @@ form.example button {
 
   }
 
-    /* Mobile Navigation Menu Styles */
+/* ============== Mobile Navigation Menu Styles ===================== */
 
     nav ul li {list-style-type: none;}
 
@@ -325,4 +327,43 @@ div#banner {
   cursor: pointer;
   margin-right: .5em;
   font-weight: bold;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }
