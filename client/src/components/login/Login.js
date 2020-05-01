@@ -9,8 +9,8 @@ export default function Login() {
                     <h2>Dashboard Login</h2>
                         <br />
                         <form id="dashboard-form">
-                            <input id="senderName" type="text" placeholder="Username" />
-                            <input id="senderEmail" type="password" placeholder="Password" />
+                            <input id="senderName" class="form-control" type="text" placeholder="Username" />
+                            <input type="password" class="form-control" id="password-input" placeholder="Password" />
                             <button type="button" id="sendform">Login</button>
                         </form>
                     </div>
