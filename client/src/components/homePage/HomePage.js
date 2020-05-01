@@ -1,33 +1,33 @@
-import React, { useState } from 'react';
-import ReactMapGL, { Marker } from "react-map-gl";
+import React from 'react';
+import { GoogleMap, withScriptjs, withGoogleMap} from "react-google-maps";
+
+function Map() {
+    return (
+        <GoogleMap
+        defaultZoom={10}
+        defaultCenter={{ lat: 39.952583, lng: -75.165222}}
+        />
+    )
+}
+
+const WrappedMap = withScriptjs(withGoogleMap(Map));
 
 
 export default function HomePage() {
 
-    const [viewport, setViewport] = useState({
-        latitude: 39.9527237,
-        longitude: -75.1635262,
-        zoom: 10,
-        width: '100vw',
-        height: "100vh"
-    })
 
     return (
 
-
-
-        <div>
-            <section id="content">
-
-                <ReactMapGL
-                    {...viewport}
-                    mapboxApiAccessToken={process.env.REACT_APP_BILLBOARD}
-                    mapStyle="mapbox://styles/ianclark226/ck9biyq6q02qp1jmg9t1ao42t"
-                    onViewportChange={viewport => {
-                        setViewport(viewport);
-                    }}
-                >
-                </ReactMapGL>
+        <div style ={{ width: "100vw", height: "100vh" }}>
+            <WrappedMap 
+            googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=${
+                process.env.REACT_APP_GOOGLE_KEY
+              }`}
+            loadingElement={<div style= {{ height: "100%" }} />}
+            containerElement={<div style={{ height: "100%"}}/>}
+            mapElement={<div style={{ height: "100%" }} />}
+            />
+        
 
                 <div className="container-fluid">
                     <div className="row">
@@ -133,8 +133,9 @@ export default function HomePage() {
 
                     </div>
                 </div>
+                </div>
 
-            </section>
-        </div>
+            
+        
     )
 }
