@@ -109,9 +109,13 @@ dist
 
 #API
 
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 =======
 >>>>>>> 6cd0786d5482971740ca5d6659f992a1ab4bb21b
 =======
 >>>>>>> 757c71acd7bd08136f749051818bfaeedad4a146
+=======
+.env.local
+>>>>>>> be6c375d99e871c4cbee5eab4c44c10c73171054

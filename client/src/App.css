@@ -58,7 +58,7 @@ button#demoBtn {
   font-size: 2em;
 }
 
-form.example input[type=text] {
+form.example input[type=text], form.example input[type=email], form.example input[type=tel] {
     padding: 10px;
     font-size: 17px;
     border: 1px solid grey;
@@ -96,10 +96,26 @@ form.example button {
     margin-bottom: 10px;
   }
 
+  section#login {
+   /* background-image: url(../../images/billboard-bg.jpg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+  }
+
 @media (max-width: 650px) {
     #logo {font-size: 1.1em; padding-top: 1em;}
     nav {padding-top: .5em;}
     nav a:hover {text-decoration: none;}
+}
+
+@media screen and (min-width: 1024px) {
+  footer {
+    /* position: absolute; */
+    bottom: 0;
+    width: 100%;
+  }
 }
 
 #map{
@@ -107,8 +123,9 @@ form.example button {
     width:100%;
   }
 
-  #about {padding-top: 30px; padding-bottom: 30px;}
+  #about, #login {padding-top: 30px; padding-bottom: 30px;}
   #about h1, #about h2, #about h3, #about h4 {text-align: center;}
+  #login h1, #login, #login h3, #login h4 {text-align: center;}
 
   #contact {padding-top: 30px; padding-bottom: 30px; text-align: center;}
   #contact h1, #contact h2, #contact h3, #contact h4 {text-align: center;}
@@ -123,7 +140,17 @@ form.example button {
     padding: 1.5em;
   }
 
-  #contact-form input[type=submit], #sendform {
+  #dashboard-form {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #333;
+    padding: 1.5em;
+  }
+
+  #contact-form input[type=submit], #sendform, #dashboard-form input[type=submit]{
     padding: 1em; 
     background-color: #14679e;
     color: #fff;
@@ -134,13 +161,13 @@ form.example button {
     max-width: 250px;
   }
 
-  #contact-form input[type=submit]:hover {opacity: .8;}
+  #contact-form input[type=submit]:hover, #dashboard-form input[type=submit]:hover {opacity: .8;}
 
   input[type=text], input[type=email], input[type=number] {
 
   }
 
-    /* Mobile Navigation Menu Styles */
+/* ============== Mobile Navigation Menu Styles ===================== */
 
     nav ul li {list-style-type: none;}
 
@@ -154,10 +181,15 @@ form.example button {
       font-size: 1em;
       transition: background 0.2s;
       text-decoration: none;
+      text-transform: uppercase;
     }
     ul#menu a:hover {
       background-color: #303030;
       cursor: pointer;
+    }
+
+    a.blue, a.blue:hover {
+      background: #178df3!important;
     }
 
     @media screen and (max-width: 1023px) {
@@ -222,3 +254,116 @@ form.example button {
       float: right;
     }
     
+/* ================== Dashboard Page Code ======================= */
+
+div#banner {
+  width: 100%;
+  padding: 0;
+  background: gray;
+  margin-bottom: 40px;
+}
+
+#banner h1 {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  background: blue;
+  padding-left: .5em;
+  padding-top: .4em;
+  padding-bottom: .4em;
+  max-width: 400px;
+  color: #fff;
+  margin-left: 0px;
+}
+
+#dual-col {
+  margin-bottom: 40px;
+}
+
+#sec1, #sec2 {padding: 1em;}
+
+#dashboard-form .label {
+  color: #fff; 
+  background: transparent;
+  font-size: 1.2em;
+}
+
+.billboard_wrap, .client_wrap {
+  margin-bottom: 1em;
+  max-height: 500px;
+  overflow-y: scroll;
+  background: #b9b9b9;
+  padding: 1em;
+  border: 2px solid #333;
+}
+
+.billboard_listing, .client_listing {
+  background: gray;
+  padding: 1em;
+  margin-bottom: 10px;
+}
+
+.list-title {
+  display: inline;
+  margin-right: 1em;
+}
+
+.edit {
+  color: #fff;
+  background: green;
+  text-transform: uppercase;
+  padding: .5em;
+  display: inline;
+  cursor: pointer;
+  margin-right: .5em;
+  font-weight: bold;
+}
+
+.delete {
+  color: #fff;
+  background: red;
+  text-transform: uppercase;
+  padding: .5em;
+  display: inline;
+  cursor: pointer;
+  margin-right: .5em;
+  font-weight: bold;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}

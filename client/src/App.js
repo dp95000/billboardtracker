@@ -1,26 +1,20 @@
 //mapbox
 
-import React, { useState } from 'react';
-import ReactMapGL, { Marker } from "react-map-gl";
+import React from 'react';
 import './App.css';
 import Header from "./components/header/header";
 import Footer from "./components/footer/footer";
 import Main from './components/main/Main';
 
 import './App.css';
+require('dotenv').config()
 
 export default function App() {
-  const [viewport, setViewport] = useState({
-    latitude: 39.9527237,
-    longitude: -75.1635262,
-    zoom: 10,
-    width: '100vw',
-    height: "100vh"
-  })
 
   return (
     <div>
       <Header></Header>
+<<<<<<< HEAD
 
 
 
@@ -34,9 +28,10 @@ export default function App() {
       >
       </ReactMapGL>
 
+=======
+>>>>>>> be6c375d99e871c4cbee5eab4c44c10c73171054
       <Main></Main>
       <Footer></Footer>
-
 
     </div>
   )
