@@ -1,7 +1,7 @@
 import React from 'react';
 import { GoogleMap, withScriptjs, withGoogleMap } from "react-google-maps";
 import UserInputs from "../demographics/UserInputs";
-
+import Demographics from "../demographics/Demographics";
 
 
 function Map() {
@@ -40,7 +40,7 @@ export default function HomePage() {
                         <UserInputs />
 
                         {/* Demographics Data Output Table */}
-
+                        <Demographics />
 
                         {/* End of Demographic Table Section */}
                     </div>
