@@ -1,5 +1,6 @@
 import React from 'react';
 import { GoogleMap, withScriptjs, withGoogleMap } from "react-google-maps";
+import UserInputs from "../demographics/UserInputs";
 
 function Map() {
     return (
@@ -34,8 +35,10 @@ export default function HomePage() {
                 <div className="row">
                     <div className="columns medium-6 left-side">
 
+                        <UserInputs />
+
                         {/* Demographics Data Output Table */}
-                        <button id="demoBtn" type="button" className="button">Get Demographics</button>
+
                         <div className="demographics-table">
 
                             {/* Selected City */}
