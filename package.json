@@ -29,6 +29,7 @@
     "if-env": "^1.0.4",
     "nodemon": "^2.0.3",
     "path": "^0.12.7",
+    "react-google-maps": "^9.4.5",
     "react-router-dom": "^5.1.2"
   }
 }
