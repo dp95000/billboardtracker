@@ -1,7 +1,4 @@
 import React from 'react';
-<<<<<<< HEAD
-import ReactMapGL, {Marker} from "react-map-gl";
-=======
 import { GoogleMap, withScriptjs, withGoogleMap } from "react-google-maps";
 import UserInputs from "../demographics/UserInputs";
 
@@ -18,7 +15,6 @@ function Map() {
 
 const WrappedMap = withScriptjs(withGoogleMap(Map));
 
->>>>>>> be6c375d99e871c4cbee5eab4c44c10c73171054
 
 export default function HomePage() {
 
