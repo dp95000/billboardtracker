@@ -85,3 +85,89 @@ $.ajax(settings).done(function (response) {
 
 
 });
+
+
+{/*DEMOGRAPHICS TABLE*/ }
+<div className="demographics-table">
+
+  {/* Selected City */}
+  <div className="row">
+    <div className="columns medium-6 cell-output">
+      <strong><p>Selected City:</p></strong>
+    </div>
+    <div className="columns medium-6 cell-output">
+      <p>Philadelphia</p>
+    </div>
+  </div>
+
+  {/* Total Population */}
+  <div className="row">
+    <div className="columns medium-6 cell-output">
+      <strong><p>Total Population:</p></strong>
+    </div>
+    <div className="columns medium-6 cell-output">
+      <p><span id="totPopVal"></span></p>
+    </div>
+  </div>
+
+  {/* Total Male Population */}
+  <div className="row">
+    <div className="columns medium-6 cell-output">
+      <strong><p>Total Male Population:</p></strong>
+    </div>
+    <div className="columns medium-6 cell-output">
+      <p><span id="totMalesVal"></span></p>
+    </div>
+  </div>
+
+  {/* Total Female Population */}
+  <div className="row">
+    <div className="columns medium-6 cell-output">
+      <strong><p>Total Female Population:</p></strong>
+    </div>
+    <div className="columns medium-6 cell-output">
+      <p><span id="totFemalesVal"></span></p>
+    </div>
+  </div>
+
+  {/* Total Households */}
+  <div className="row">
+    <div className="columns medium-6 cell-output">
+      <strong><p>Total Households:</p></strong>
+    </div>
+    <div className="columns medium-6 cell-output">
+      <p><span id="totHHVal"></span></p>
+    </div>
+  </div>
+
+  {/* Median Household Income */}
+  <div className="row">
+    <div className="columns medium-6 cell-output">
+      <strong><p>Median Household Income:</p></strong>
+    </div>
+    <div className="columns medium-6 cell-output">
+      <p><span id="medHincVal"></span></p>
+    </div>
+  </div>
+
+  {/* Per Capita Income */}
+  <div className="row">
+    <div className="columns medium-6 cell-output">
+      <strong><p>Per Capita Income:</p></strong>
+    </div>
+    <div className="columns medium-6 cell-output">
+      <p><span id="pciVal"></span></p>
+    </div>
+  </div>
+
+  {/* Diversity Index */}
+  <div className="row">
+    <div className="columns medium-6 cell-output">
+      <strong><p>Diversity Index:</p></strong>
+    </div>
+    <div className="columns medium-6 cell-output">
+      <p><span id="divIndxVal"></span></p>
+    </div>
+  </div>
+
+</div>
