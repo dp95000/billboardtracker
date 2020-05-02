@@ -1,4 +1,5 @@
 import React from "react";
+import { getDemographics } from "./Demographics";
 
 export default function () {
   return (
@@ -19,7 +20,7 @@ export default function () {
         <input className="form-check-input" type="checkbox" value="" id="defaultCheck1"></input>
         <label className="form-check-label" htmlFor="defaultCheck1">Trenton, NJ</label>
       </div>
-      <button id="demoBtn" type="button" className="button">Get Demographics</button>
+      <button id="demoBtn" type="button" className="button" onClick={getDemographics}>Get Demographics</button>
     </div>
   )
 }

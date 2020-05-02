@@ -24,10 +24,13 @@
   "homepage": "https://github.com/dp95000/group-project-3#readme",
   "dependencies": {
     "bcrypt": "^4.0.1",
+    "axios": "^0.19.2",
     "concurrently": "^5.1.0",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "https-localhost": "^4.5.2",
     "if-env": "^1.0.4",
+    "mkcert": "^1.2.0",
     "nodemon": "^2.0.3",
     "path": "^0.12.7",
     "react-google-maps": "^9.4.5",
