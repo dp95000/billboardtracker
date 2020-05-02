@@ -1,0 +1,38 @@
+{
+  "name": "billboard_tracker_app",
+  "version": "2.0.0",
+  "description": "Billboard Tracker Application",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+    "start:prod": "node server.js",
+    "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\" ",
+    "client": "cd ./client && npm run start",
+    "install": "cd ./client && npm install",
+    "build": "cd ./client && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dp95000/group-project-3.git"
+  },
+  "author": "DP-IC-TJ-DD",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dp95000/group-project-3/issues"
+  },
+  "homepage": "https://github.com/dp95000/group-project-3#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "concurrently": "^5.1.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "https-localhost": "^4.5.2",
+    "if-env": "^1.0.4",
+    "mkcert": "^1.2.0",
+    "nodemon": "^2.0.3",
+    "path": "^0.12.7",
+    "react-google-maps": "^9.4.5",
+    "react-router-dom": "^5.1.2"
+  }
+}

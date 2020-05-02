@@ -8,7 +8,7 @@ API: "https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing
 
 *  MERN stack
 
-*  Implemented CSS framework _other th_ Bootstrap
+*  Implemented CSS framework _other_ Bootstrap
 
 ## Tech used
 
