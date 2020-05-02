@@ -1,6 +1,7 @@
 import React from 'react';
-import { GoogleMap, withScriptjs, withGoogleMap } from "react-google-maps";
+import { GoogleMap, withScriptjs, withGoogleMap, Marker } from "react-google-maps";
 import UserInputs from "../demographics/UserInputs";
+import * as BBdata from "../data/BBdata.json";
 
 
 
@@ -9,7 +10,18 @@ function Map() {
         <GoogleMap
             defaultZoom={10}
             defaultCenter={{ lat: 39.952583, lng: -75.165222 }}
-        />
+
+
+            {...BBdata.features.map}{...BBdata => (
+                <Marker
+                    key={BBdata.properties.PARK_ID}
+                    position={{ 
+                        lat: BBdata.geometry.coordinates[1],
+                        lng: BBdata.geometry.coordinates[0] 
+                    }} />
+            )}
+/>
+    
     )
 }
 
