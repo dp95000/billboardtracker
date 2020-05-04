@@ -1,6 +1,7 @@
 import React from 'react';
 import BillboardForm from './BillboardForm';
 import ClientForm from './ClientForm';
+import BillboardBG from '../../images/billboard-bg.jpg';
 
 {/* Function to Open Billboard Modal */}
 function modal(){
@@ -21,8 +22,8 @@ export default function Dashboard() {
             <section id="content dashboard">
                 
                 {/* Banner */}
-                <div className="container">
-                        <div className="columns medium-12" id="banner">
+                <div className="columns medium-12" id="banner" style ={{ backgroundImage: "url(" + BillboardBG + ")", backgroundSize: "cover", backgroundRepeat: "no-repeat", backgroundPosition: "center"  }}>
+                        <div className="columns medium-12 padfix">
                             <h1>Dashboard Login</h1>
                         </div>
                 </div>
@@ -62,6 +63,7 @@ export default function Dashboard() {
                                 <h3 className="list-title">Billboard Number</h3><button id="bbmodal" onClick={modal} className="edit">Edit</button><button className="delete">Delete</button>
                             </div>
                         </div>
+                        <button id="billboard_add" class="btn_large">Add New</button>
 
                     </div>
                     {/* Clients */}
@@ -99,7 +101,15 @@ export default function Dashboard() {
                             </div>
                            
                         </div>
+                        <button id="client_add" class="btn_large">Add New</button>
+                    </div>
+                </div>
 
+                {/*Logout */}
+                <div className="row logout-section" >
+                    <div className="columns medium-12">
+                        <h1>Finished Working?</h1>
+                        <button id="logout">Log Out</button>
                     </div>
                 </div>
 

@@ -202,7 +202,7 @@ CREATE TABLE users (
   PRIMARY KEY (id)
 );
 
-INSERT INTO users (user_name, password) VALUES ('david', 'Pass1234' );
-INSERT INTO users (user_name, password) VALUES ('ian', 'Pass1234' );
-INSERT INTO users (user_name, password) VALUES ('tyler', 'Pass1234' );
-INSERT INTO users (user_name, password) VALUES ('didier', 'Pass1234' );
+INSERT INTO users (user_name, password) VALUES ('davepollan@gmail.com', 'Pass1234' );
+INSERT INTO users (user_name, password) VALUES ('ianclark226@gmail.com', 'Pass1234' );
+INSERT INTO users (user_name, password) VALUES ('tyjenki@gmail.com', 'Pass1234' );
+INSERT INTO users (user_name, password) VALUES ('delphindidier0@gmail.com', 'Pass1234' );
