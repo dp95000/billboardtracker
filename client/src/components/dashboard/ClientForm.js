@@ -12,7 +12,7 @@ export default function ClientForm() {
             <div id="client_modal" className="modal">
              <div className="modal-content">
              <span id="close_btn" onClick={close_modal2} className="close">&times;</span>
-                <h1>Add and Edit Customers</h1>
+                <h3>Add and Edit Customers</h3>
 
                     {/* Clients Form */}
                     <form id="dashboard-form">

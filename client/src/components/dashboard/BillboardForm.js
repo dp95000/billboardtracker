@@ -12,7 +12,7 @@ export default function billboardForm() {
              <div id="billboard_modal" className="modal">
              <div className="modal-content">
              <span id="close_btn" onClick={close_modal} className="close">&times;</span>
-                <h1>Add and Edit Billboard Locations</h1>
+                <h3>Add and Edit Billboard Locations</h3>
 
                         {/* Billboard Save & Update Form */}
                         <form id="dashboard-form">
