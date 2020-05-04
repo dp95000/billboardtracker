@@ -31,6 +31,7 @@
     "if-env": "^1.0.4",
     "mkcert": "^1.2.0",
     "nodemon": "^2.0.3",
+    "passport": "^0.4.1",
     "path": "^0.12.7",
     "react-google-maps": "^9.4.5",
     "react-router-dom": "^5.1.2"
