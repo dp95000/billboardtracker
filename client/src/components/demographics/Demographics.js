@@ -1,6 +1,5 @@
 import React from "react";
-import axios from "axios";
-
+import API from "../../utils/API";
 // const totPop = document.getElementById("totPopVal");
 // const totMales = document.getElementById("totMalesVal");
 // const totFemales = document.getElementById("totFemalesVal");
@@ -8,56 +7,6 @@ import axios from "axios";
 // const medHinc = document.getElementById("medHincVal");
 // const pci = document.getElementById("pciVal");
 // const divIndx = document.getElementById("divIndxVal");
-
-
-
-{/*export function showTable() {
-  document.getElementsByClassName("demographics-table").css("display", "block");
-};*/}
-
-export async function getDemographics(event) {
-
-  console.log("i was clicked!");
-
-  axios({
-    method: "post",
-    url: `https://geoenrich.arcgis.com/arcgis/rest/services/World/geoenrichmentserver/GeoEnrichment/enrich?studyAreas=[
-      {
-        \"geometry\":{
-          \"x\":-75.165222,
-          \"y\":39.952583
-        }
-      }
-    ]&studyAreasOptions={
-      \"areaType\":\"RingBuffer\",
-      \"bufferUnits\":\"esriMiles\",
-      \"bufferRadii\":[1]
-    }&dataCollections=[\"KeyGlobalFacts\", \"KeyUSFacts\"]",
-      "method": "POST",
-      "timeout": 0,
-      "headers": {
-        "Content-Type": "application/x-www-form-urlencoded"
-      }`,
-    data: {
-      "f": "json",
-      "token": "process.env.ARCGIS_TOKEN",
-      "inSR": "4326",
-      "outSR": "4326",
-      "returnGeometry": "true"
-    }
-  })
-    .then((response) => {
-      console.log(JSON.parse(response));
-    }, (error) => {
-      console.log(error);
-    });
-
-  renderDemographics();
-}
-
-
-// $.ajax(settings).done(function (response) {
-//   console.log(JSON.parse(response));
 
 //   totPop.prepend(JSON.parse(response).results[0].value.FeatureSet[0].features[0].attributes.TOTPOP_CY);
 //   totMales.prepend(JSON.parse(response).results[0].value.FeatureSet[0].features[0].attributes.TOTMALES);
@@ -68,7 +17,33 @@ export async function getDemographics(event) {
 //   divIndx.prepend(JSON.parse(response).results[0].value.FeatureSet[0].features[0].attributes.DIVINDX_CY);
 
 
-// });
+{/*export function showTable() {
+  document.getElementsByClassName("demographics-table").css("display", "block");
+};*/}
+
+// const philly = {
+//   "x": -75.165222,
+//   "y": 39.952583
+// }
+// const wilmington = {
+//   "x": -75.546667,
+//   "y": 39.745833
+// }
+// const trenton = {
+//   "x": -74.764001,
+//   "y": 40.223748
+// }
+
+export function getDemographics() {
+
+  console.log("i was clicked!");
+  API.auth().then((response) => {
+    console.log(response)
+  }, (error) => {
+    console.log(error);
+  });
+}
+
 
 export default function renderDemographics() {
   return (
