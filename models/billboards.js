@@ -32,14 +32,14 @@ module.exports = function(sequealize, DataTypes) {
         type: {
 
             type: DataTypes.ENUM,
-            VALUES: ["Digital", "Static"],
+            values: ["Digital", "Static"],
                 
             },
 
 
             avalible: {
                 type: DataTypes.ENUM,
-                VALUES: ["Yes", "No"],
+                values: ["Yes", "No"],
             },
 
 
