@@ -23,6 +23,8 @@
   },
   "homepage": "https://github.com/dp95000/group-project-3#readme",
   "dependencies": {
+    "@esri/arcgis-rest-auth": "^2.12.1",
+    "@esri/arcgis-rest-request": "^2.12.1",
     "axios": "^0.19.2",
     "concurrently": "^5.1.0",
     "dotenv": "^8.2.0",

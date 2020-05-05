@@ -34,9 +34,6 @@ export default function Header() {
           </nav>
         </div>
       </div>
-
-      {/*<Toggle></Toggle>*/}
-
     </header>
 
   </div>
