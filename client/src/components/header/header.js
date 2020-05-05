@@ -1,5 +1,6 @@
 import React from 'react';
 //import Toggle from './toggle';
+import toggle from "./toggle";
 
 
 export default function Header() {
@@ -15,7 +16,7 @@ export default function Header() {
         <div className="columns small-6 medium-6">
           <nav className="nav">
 
-            <div className="hamburger-container">
+            <div className="hamburger-container collapsible" onClick={toggle}>
               <ul className="hamburger">
                 <li></li>
                 <li></li>
@@ -33,9 +34,6 @@ export default function Header() {
           </nav>
         </div>
       </div>
-
-      {/*<Toggle></Toggle>*/}
-
     </header>
 
   </div>

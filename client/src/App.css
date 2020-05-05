@@ -104,19 +104,11 @@ form.example button {
 
   }
 
-@media (max-width: 650px) {
-    #logo {font-size: 1.1em; padding-top: 1em;}
-    nav {padding-top: .5em;}
-    nav a:hover {text-decoration: none;}
-}
-
-@media screen and (min-width: 1024px) {
-  footer {
-    /* position: absolute; */
-    bottom: 0;
-    width: 100%;
+  .map_contain {
+    -webkit-box-shadow: 4px 10px 15px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px 10px 15px 0px rgba(0,0,0,0.75);
+    box-shadow: 4px 10px 15px 0px rgba(0,0,0,0.75);
   }
-}
 
 #map{
     height:400px;
@@ -150,7 +142,7 @@ form.example button {
     padding: 1.5em;
   }
 
-  #contact-form input[type=submit], #sendform, #dashboard-form input[type=submit]{
+  #contact-form input[type=submit], #sendform, #dashboard-form input[type=submit],#dashboard-form .btn{
     padding: 1em; 
     background-color: #14679e;
     color: #fff;
@@ -253,20 +245,78 @@ form.example button {
       cursor: pointer;
       float: right;
     }
+
+<<<<<<< HEAD
+    .collapsible {
+      background-color: #eee;
+      color: #444;
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 15px;
+    }
+    
+    .active, .collapsible:hover {
+      background-color: #ccc;
+    }
+=======
+/* ================== Mobil Rules ======================= */
+
+@media screen and (max-width: 640px) {
+  .close {margin-right: 10px; font-size: 2em;}
+}
+
+@media screen and (max-width: 650px) {
+  #logo {font-size: 1.1em; padding-top: 1em;}
+  nav {padding-top: .5em;}
+  nav a:hover {text-decoration: none;}
+}
+
+@media screen and (min-width: 641px) {
+  .close {margin-right: 10px; font-size: 2em; margin-top: 10x;}
+}
+
+@media screen and (min-width: 1024px) {
+  footer {
+    /* position: absolute; */
+    bottom: 0;
+    width: 100%;
+  }
+  .close {font-size: 3em; }
+}
+
+@media screen and (min-height: 1024px) {
+  #banner h1 {margin-top: 1.5em;}
+}
+
+@media screen and (min-width: 1500px) {
+  #banner {min-height: 400px;}
+  #banner h1 {margin-top: 3em;}
+}
+>>>>>>> 7b4953b32965f9579c2c6c3dc19af41e655d6c21
     
 /* ================== Dashboard Page Code ======================= */
+
+.padfix {padding: 0;}
+
+#banner {
+-webkit-box-shadow: 4px 10px 15px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 4px 10px 15px 0px rgba(0,0,0,0.75);
+box-shadow: 4px 10px 15px 0px rgba(0,0,0,0.75);
+}
 
 div#banner {
   width: 100%;
   padding: 0;
-  background: gray;
   margin-bottom: 40px;
 }
 
 #banner h1 {
-  margin-top: 1.5em;
   margin-bottom: 1.5em;
-  background: blue;
+  background:rgba(0, 4, 2, 0.7);
   padding-left: .5em;
   padding-top: .4em;
   padding-bottom: .4em;
@@ -280,6 +330,24 @@ div#banner {
 }
 
 #sec1, #sec2 {padding: 1em;}
+
+.logout-section {padding-bottom: 3em; padding-top: 3em; text-align: center; max-width: 100%!important; background: #eeeeee;}
+
+#logout {
+  background: orange;
+  color: #fff;
+  font-size: 2em;
+  font-weight: bold;
+  padding: .5em;
+  text-transform: uppercase;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+  -webkit-box-shadow: 4px 10px 15px -6px rgba(0,0,0,0.75);
+  -moz-box-shadow: 4px 10px 15px -6px rgba(0,0,0,0.75);
+  box-shadow: 4px 10px 15px -6px rgba(0,0,0,0.75);
+}
 
 #dashboard-form .label {
   color: #fff; 
@@ -309,7 +377,7 @@ div#banner {
 
 .edit {
   color: #fff;
-  background: green;
+  background: #2fb752;
   text-transform: uppercase;
   padding: .5em;
   display: inline;
@@ -329,6 +397,21 @@ div#banner {
   font-weight: bold;
 }
 
+#billboard_add, #client_add {
+  background-color:#2fb752;
+  padding: 1em;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.5em;
+  -webkit-box-shadow: 4px 10px 15px -6px rgba(0,0,0,0.75);
+  -moz-box-shadow: 4px 10px 15px -6px rgba(0,0,0,0.75);
+  box-shadow: 4px 10px 15px -6px rgba(0,0,0,0.75);
+}
+
+#billboard_add:hover, #client_add:hover, .edit:hover, .delete:hover, #logout:hover {opacity: .8;}
+
 /* The Modal (background) */
 .modal {
   display: none; /* Hidden by default */
@@ -346,19 +429,24 @@ div#banner {
 
 /* Modal Content */
 .modal-content {
-  background-color: #fefefe;
+  background-color: #333;
   margin: auto;
-  padding: 20px;
   border: 1px solid #888;
-  width: 80%;
+  width: 60%;
 }
 
 /* The Close Button */
 .close {
-  color: #aaaaaa;
+  color: #fff;
   float: right;
-  font-size: 28px;
   font-weight: bold;
+}
+
+.modal-content h3 {
+  color: #fff;
+  background:#14679e;
+  margin: 0;
+  padding: .5em;
 }
 
 .close:hover,

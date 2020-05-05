@@ -1,41 +1,28 @@
 import React from 'react';
+import Header from "./header";
 
 
-export default function Toggle() {
-    return(
+// export default function toggle() {
+// const burger = document.getElementsByClassName("hamburger").addEventListener("click", function () {
+//   document.getElementById("menu").slideToggle();
 
-<div>
-  $(document).ready(function() {
-    //toggle menu
-    $(".hamburger-container").click(function() {
-      $("#menu").slideToggle();
-    });
+// }
 
-    //to fix issue that toggle adds style(hides) to nav
-    $(window).resize(function() {
-      if (window.innerWidth > 1024) {
-        $("#menu").removeAttr("style");
-      }
-    });
 
-    //icon animation
-    var topBar = $(".hamburger li:nth-child(1)"),
-      middleBar = $(".hamburger li:nth-child(2)"),
-      bottomBar = $(".hamburger li:nth-child(3)");
 
-    $(".hamburger-container").on("click", function() {
-      if (middleBar.hasClass("rot-45deg")) {
-        topBar.removeClass("rot45deg");
-        middleBar.removeClass("rot-45deg");
-        bottomBar.removeClass("hidden");
+export default function toggle() {
+  debugger
+  const coll = document.getElementsByClassName("collapsible");
+
+  for (let i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function () {
+      this.classList.toggle("active");
+      const content = this.nextElementSibling;
+      if (content.style.display === "block") {
+        content.style.display = "none";
       } else {
-        bottomBar.addClass("hidden");
-        topBar.addClass("rot45deg");
-        middleBar.addClass("rot-45deg");
+        content.style.display = "block";
       }
     });
-  });
-
-  </div>
-  )  
-}
+  }
+};
