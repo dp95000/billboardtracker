@@ -1,5 +1,5 @@
 import React from 'react';
-// import LoginFunction from '../loginfuction/LoginFunction';
+import LoginFunction from '../loginfunction/LoginFunction';
 var passport = require("passport");
 
 export default function Login() {
@@ -14,7 +14,7 @@ export default function Login() {
                         <form className="login" id="dashboard-form">
                             <input type="email" className="form-control"  id="email-input" placeholder="Email" />
                             <input type="password" className="form-control" id="password-input" placeholder="Password" />
-                            <button type="submit" /* onClick={LoginFunction} */ id="sendform">Login</button>
+                            <button type="button" onClick={LoginFunction} id="sendform">Login</button>
                         </form>
                     </div>
                 </div>
