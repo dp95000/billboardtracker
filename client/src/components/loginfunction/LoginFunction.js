@@ -1,19 +1,17 @@
+import axios from 'axios';
+import $ from 'jquery';
 
-
-function LoginFunction() {
-
-    
+export default function LoginFunction(event) {
+    //alert('login attempt');
     // Getting references to our form and inputs
-    var loginForm = document.querySelector("form.login");
     var emailInput = document.querySelector("input#email-input");
     var passwordInput = document.querySelector("input#password-input");
 
     // When the form is submitted, we validate there's an email and password entered
-    loginForm.on("submit", function(event) {
-        event.preventDefault();
+
         var userData = {
-            email: emailInput.val().trim(),
-            password: passwordInput.val().trim()
+            email: emailInput.value.trim(),
+            password: passwordInput.value.trim()
         };
 
         if (!userData.email || !userData.password) {
@@ -22,17 +20,19 @@ function LoginFunction() {
 
         // If we have an email and password we run the loginUser function and clear the form
         loginUser(userData.email, userData.password);
-        emailInput.val("");
-        passwordInput.val("");
-    });
+        emailInput.value = "";
+        passwordInput.value = "";
 
     // loginUser does a post to our "api/login" route and if successful, redirects us the the members page
     function loginUser(email, password) {
-        loginUser.post("/api/login", {
+        console.log(email);
+        console.log(password);
+        $.post("/api/login/?email=" + email + "&password=" + password, {
                 email: email,
                 password: password
             })
             .then(function() {
+                console.log("Success");
                 window.location.replace("/dashboard");
                 // If there's an error, log the error
             })
@@ -40,9 +40,16 @@ function LoginFunction() {
     }
 
     function handleLoginErr(err) {
-        document.querySelector("#alert .msg").text(err.responseJSON);
-        document.querySelector("#alert").fadeIn(500);
+        console.log("fail");
+        if (document.querySelector("#alert .msg")) {
+            document.querySelector("#alert .msg").text(err.responseJSON);
+        }
+
+        if (document.querySelector("#alert")) {
+            document.querySelector("#alert").fadeIn(500);
+        }
     }
 
 
 };
+
