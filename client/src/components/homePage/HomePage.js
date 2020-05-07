@@ -1,16 +1,58 @@
 import React from 'react';
-import { GoogleMap, withScriptjs, withGoogleMap } from "react-google-maps";
+import { GoogleMap, withScriptjs, withGoogleMap, Marker } from "react-google-maps";
 import UserInputs from "../demographics/UserInputs";
-
-
-
 
 function Map() {
     return (
         <GoogleMap
             defaultZoom={10}
             defaultCenter={{ lat: 39.952583, lng: -75.165222 }}
-        />
+        >
+            <Marker position={{ lat: 39.947475, lng: -75.117828 }}
+            />
+            <Marker position=
+                {{ lat: 39.948934, lng: -75.119765 }}
+            />
+            <Marker position=
+                {{ lat: 39.946107, lng: -75.111171 }}
+            />
+            <Marker position=
+                {{ lat: 39.948934, lng: -75.119765 }}
+            />
+            <Marker position=
+                {{ lat: 39.945966, lng: -75.109798 }}
+            />
+            <Marker position=
+                {{ lat: 39.945142, lng: -75.107525 }}
+            />
+            <Marker position=
+                {{ lat: 39.954656, lng: -75.143354 }}
+            />
+            <Marker position=
+                {{ lat: 39.954013, lng: -75.142501 }}
+            />
+            <Marker position=
+                {{ lat: 39.913734, lng: -75.181454 }}
+            />
+            <Marker position=
+                {{ lat: 39.720190, lng: -75.539064 }}
+            />
+            <Marker position=
+                {{ lat: 39.739187, lng: -75.562125 }}
+            />
+            <Marker position=
+                {{ lat: 39.680814, lng: -75.591125 }}
+            />
+            <Marker position=
+                {{ lat: 40.212427, lng: -74.703457 }}
+            />
+            <Marker position=
+                {{ lat: 40.216930, lng: -74.755357 }}
+            />
+            <Marker position=
+                {{ lat: 40.224462, lng: -74.758685 }}
+            />
+        </GoogleMap>
     )
 }
 
