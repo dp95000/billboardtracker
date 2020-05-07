@@ -1,7 +1,7 @@
 import React from 'react';
 import { GoogleMap, withScriptjs, withGoogleMap } from "react-google-maps";
 import UserInputs from "../demographics/UserInputs";
-import Demographics from "../demographics/Demographics";
+
 
 
 
@@ -53,7 +53,7 @@ export default function HomePage() {
                                     <strong><p>City:</p></strong>
                                 </div>
                                 <div className="columns medium-6 cell-output">
-                                    <p>Philadelphia</p>
+                                    <p id="cityName"></p>
                                 </div>
                             </div >
 
