@@ -50,7 +50,7 @@ export default function HomePage() {
                             {/* Selected City */}
                             < div className="row" >
                                 <div className="columns medium-6 cell-output">
-                                    <strong><p>City:</p></strong>
+                                    <strong><p>Location</p></strong>
                                 </div>
                                 <div className="columns medium-6 cell-output">
                                     <p id="cityName"></p>
@@ -60,7 +60,7 @@ export default function HomePage() {
                             {/* Total Population */}
                             < div className="row" >
                                 <div className="columns medium-6 cell-output">
-                                    <strong><p>Total Population:</p></strong>
+                                    <strong><p>Total Population</p></strong>
                                 </div>
                                 <div className="columns medium-6 cell-output">
                                     <p><span id="totPopVal"></span></p>
@@ -70,7 +70,7 @@ export default function HomePage() {
                             {/* Total Male Population */}
                             < div className="row" >
                                 <div className="columns medium-6 cell-output">
-                                    <strong><p>Total Male Population:</p></strong>
+                                    <strong><p>Total Male Population</p></strong>
                                 </div>
                                 <div className="columns medium-6 cell-output">
                                     <p><span id="totMalesVal"></span></p>
@@ -80,7 +80,7 @@ export default function HomePage() {
                             {/* Total Female Population */}
                             < div className="row" >
                                 <div className="columns medium-6 cell-output">
-                                    <strong><p>Total Female Population:</p></strong>
+                                    <strong><p>Total Female Population</p></strong>
                                 </div>
                                 <div className="columns medium-6 cell-output">
                                     <p><span id="totFemalesVal"></span></p>
@@ -90,7 +90,7 @@ export default function HomePage() {
                             {/* Total Households */}
                             < div className="row" >
                                 <div className="columns medium-6 cell-output">
-                                    <strong><p>Total Households:</p></strong>
+                                    <strong><p>Total Households</p></strong>
                                 </div>
                                 <div className="columns medium-6 cell-output">
                                     <p><span id="totHHVal"></span></p>
@@ -100,7 +100,7 @@ export default function HomePage() {
                             {/* Median Household Income */}
                             < div className="row" >
                                 <div className="columns medium-6 cell-output">
-                                    <strong><p>Median Household Income:</p></strong>
+                                    <strong><p>Median Household Income</p></strong>
                                 </div>
                                 <div className="columns medium-6 cell-output">
                                     <p><span id="medHincVal"></span></p>
@@ -110,7 +110,7 @@ export default function HomePage() {
                             {/* Per Capita Income */}
                             < div className="row" >
                                 <div className="columns medium-6 cell-output">
-                                    <strong><p>Per Capita Income:</p></strong>
+                                    <strong><p>Per Capita Income</p></strong>
                                 </div>
                                 <div className="columns medium-6 cell-output">
                                     <p><span id="pciVal"></span></p>
@@ -120,7 +120,7 @@ export default function HomePage() {
                             {/* Diversity Index */}
                             < div className="row" >
                                 <div className="columns medium-6 cell-output">
-                                    <strong><p>Diversity Index:</p></strong>
+                                    <strong><p>Diversity Index</p></strong>
                                 </div>
                                 <div className="columns medium-6 cell-output">
                                     <p><span id="divIndxVal"></span></p>
@@ -136,8 +136,9 @@ export default function HomePage() {
                     {/* Right Side Section */}
                     <div className="columns medium-6 right-side">
                         <h2>Our Custom Billboard Tracking System</h2>
-                        <p>Use our Custom billboard Inventory Management system to view locations of our available billboard signs.  If you
-                        are a business owner, click the button to the left to get detailed demographic information for the Philadelphia area and see which advertising markets are right for you.
+                        <p>Welcome to our custom billboard inventory management system! Please use the GoogleMap markers to view locations of available billboard signs. Click on
+                        the markers to see information about the selected billboard, and use the demographics buttons below the map
+                        to get detailed information about the Tri-State area to see which advertising markets are right for you.
                         </p>
                     </div>
                     {/* End of Right Side Section */}
