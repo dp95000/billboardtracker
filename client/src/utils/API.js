@@ -6,6 +6,7 @@ const authentication = new ApplicationSession({
   clientSecret: process.env.clientSecret
 })
 
+
 const url = `https://geoenrich.arcgis.com/arcgis/rest/services/World/geoenrichmentserver/GeoEnrichment/enrich?f=json&token=${process.env.ARCGIS_TOKEN}&inSR=4326&outSR=4326&returnGeometry=true&studyAreas=[
   {
     "geometry":{
