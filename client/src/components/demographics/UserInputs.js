@@ -1,5 +1,5 @@
 import React from "react";
-import { getDemographics } from "./Demographics";
+import getDemographics from "../homePage/jQueryDemographics";
 
 export default function () {
   return (
