@@ -86,92 +86,49 @@ export default function HomePage() {
 
                         <UserInputs />
 
-                        {/* Demographics Data Output Table */}
-                        < div className="demographics-table" >
+                        <table className="demographics-table">
+                            <tbody>
+                                <tr>
+                                    <th>Location</th>
+                                    <th id="cityName"></th>
+                                </tr>
+                                <tr>
+                                    <td>Total Population</td>
+                                    <td id="totPopVal"></td>
+                                </tr>
+                                <tr>
+                                    <td>Total Male Population</td>
+                                    <td id="totMalesVal"></td>
+                                </tr>
+                                <tr>
+                                    <td>Total Female Population</td>
+                                    <td id="totFemalesVal"></td>
+                                </tr>
+                                <tr>
+                                    <td>Total Households</td>
+                                    <td id="totHHVal"></td>
+                                </tr>
+                                <tr>
+                                    <td>Median Household Income</td>
+                                    <td id="medHincVal"></td>
+                                </tr>
+                                <tr>
+                                    <td>Per Capita Income</td>
+                                    <td id="pciVal"></td>
+                                </tr>
+                                <tr>
+                                    <td>Diversity Index</td>
+                                    <td id="divIndxVal"></td>
+                                </tr>
+                                <tr>
+                                    <td><span><em>(Demographics data source: arcGIS)</em></span></td>
+                                </tr>
+                            </tbody>
+                        </table>
 
-                            {/* Selected City */}
-                            < div className="row" >
-                                <div className="columns medium-6 cell-output">
-                                    <strong><p>Location</p></strong>
-                                </div>
-                                <div className="columns medium-6 cell-output">
-                                    <p id="cityName"></p>
-                                </div>
-                            </div >
 
-                            {/* Total Population */}
-                            < div className="row" >
-                                <div className="columns medium-6 cell-output">
-                                    <strong><p>Total Population</p></strong>
-                                </div>
-                                <div className="columns medium-6 cell-output">
-                                    <p><span id="totPopVal"></span></p>
-                                </div>
-                            </div >
 
-                            {/* Total Male Population */}
-                            < div className="row" >
-                                <div className="columns medium-6 cell-output">
-                                    <strong><p>Total Male Population</p></strong>
-                                </div>
-                                <div className="columns medium-6 cell-output">
-                                    <p><span id="totMalesVal"></span></p>
-                                </div>
-                            </div >
 
-                            {/* Total Female Population */}
-                            < div className="row" >
-                                <div className="columns medium-6 cell-output">
-                                    <strong><p>Total Female Population</p></strong>
-                                </div>
-                                <div className="columns medium-6 cell-output">
-                                    <p><span id="totFemalesVal"></span></p>
-                                </div>
-                            </div >
-
-                            {/* Total Households */}
-                            < div className="row" >
-                                <div className="columns medium-6 cell-output">
-                                    <strong><p>Total Households</p></strong>
-                                </div>
-                                <div className="columns medium-6 cell-output">
-                                    <p><span id="totHHVal"></span></p>
-                                </div>
-                            </div >
-
-                            {/* Median Household Income */}
-                            < div className="row" >
-                                <div className="columns medium-6 cell-output">
-                                    <strong><p>Median Household Income</p></strong>
-                                </div>
-                                <div className="columns medium-6 cell-output">
-                                    <p><span id="medHincVal"></span></p>
-                                </div>
-                            </div >
-
-                            {/* Per Capita Income */}
-                            < div className="row" >
-                                <div className="columns medium-6 cell-output">
-                                    <strong><p>Per Capita Income</p></strong>
-                                </div>
-                                <div className="columns medium-6 cell-output">
-                                    <p><span id="pciVal"></span></p>
-                                </div>
-                            </div >
-
-                            {/* Diversity Index */}
-                            < div className="row" >
-                                <div className="columns medium-6 cell-output">
-                                    <strong><p>Diversity Index</p></strong>
-                                </div>
-                                <div className="columns medium-6 cell-output">
-                                    <p><span id="divIndxVal"></span></p>
-                                </div>
-                            </div >
-
-                        </div >
-
-                        {/* End of Demographic Table Section */}
                     </div>
                     {/* End of Left Side Section */}
 
