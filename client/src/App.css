@@ -81,11 +81,9 @@ form.example button {
     display: table;
     width: 100%;
     display: none;
-  }
-  .cell-output {
     border: 1px solid black;
-    display: table-cell;
   }
+ 
 
   .bbicon {
     height: 30px;
