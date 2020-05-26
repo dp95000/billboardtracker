@@ -121,13 +121,10 @@ export default function HomePage() {
                                     <td id="divIndxVal"></td>
                                 </tr>
                                 <tr>
-                                    <td><span><em>(Demographics data source: arcGIS)</em></span></td>
+                                    <td colspan="2"><em>(Demographics data source: arcGIS)</em></td>
                                 </tr>
                             </tbody>
                         </table>
-
-
-
 
                     </div>
                     {/* End of Left Side Section */}

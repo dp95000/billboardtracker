@@ -81,7 +81,6 @@ form.example button {
     display: table;
     width: 100%;
     display: none;
-    border: 1px solid black;
   }
  
 
@@ -153,9 +152,6 @@ form.example button {
 
   #contact-form input[type=submit]:hover, #dashboard-form input[type=submit]:hover {opacity: .8;}
 
-  input[type=text], input[type=email], input[type=number] {
-
-  }
 
 /* ============== Mobile Navigation Menu Styles ===================== */
 
@@ -244,7 +240,6 @@ form.example button {
       float: right;
     }
 
-<<<<<<< HEAD
     .collapsible {
       background-color: #eee;
       color: #444;
@@ -260,7 +255,6 @@ form.example button {
     .active, .collapsible:hover {
       background-color: #ccc;
     }
-=======
 /* ================== Mobil Rules ======================= */
 
 @media screen and (max-width: 640px) {
@@ -294,7 +288,6 @@ form.example button {
   #banner {min-height: 400px;}
   #banner h1 {margin-top: 3em;}
 }
->>>>>>> 7b4953b32965f9579c2c6c3dc19af41e655d6c21
     
 /* ================== Dashboard Page Code ======================= */
 
