@@ -241,20 +241,16 @@ form.example button {
     }
 
     .collapsible {
-      background-color: #eee;
       color: #444;
       cursor: pointer;
       padding: 18px;
-      width: 100%;
+      width: 40%;
       border: none;
       text-align: left;
       outline: none;
       font-size: 15px;
     }
-    
-    .active, .collapsible:hover {
-      background-color: #ccc;
-    }
+
 /* ================== Mobil Rules ======================= */
 
 @media screen and (max-width: 640px) {

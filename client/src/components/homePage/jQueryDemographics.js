@@ -1,5 +1,9 @@
 import $ from "jquery";
 
+function scrollToTable() {
+  window.scrollTo(246, 622);
+}
+
 export function getDemographicsPhilly() {
   var settings = {
     "url": `https://geoenrich.arcgis.com/arcgis/rest/services/World/geoenrichmentserver/GeoEnrichment/enrich?f=json&token=${process.env.REACT_APP_ARCGIS_TOKEN}&inSR=4326&outSR=4326&returnGeometry=true&studyAreas=[
@@ -25,9 +29,9 @@ export function getDemographicsPhilly() {
     $("#medHincVal").empty().text(JSON.parse(response).results[0].value.FeatureSet[0].features[0].attributes.MEDHINC_CY);
     $("#pciVal").empty().text(JSON.parse(response).results[0].value.FeatureSet[0].features[0].attributes.PCI_CY);
     $("#divIndxVal").empty().text(JSON.parse(response).results[0].value.FeatureSet[0].features[0].attributes.DIVINDX_CY);
-    $("#demoBtn").css("display", "none");
   });
   $(".demographics-table").css("display", "block");
+  scrollToTable();
 };
 
 
@@ -56,9 +60,9 @@ export function getDemographicsWilmington() {
     $("#medHincVal").empty().text(JSON.parse(response).results[0].value.FeatureSet[0].features[0].attributes.MEDHINC_CY);
     $("#pciVal").empty().text(JSON.parse(response).results[0].value.FeatureSet[0].features[0].attributes.PCI_CY);
     $("#divIndxVal").empty().text(JSON.parse(response).results[0].value.FeatureSet[0].features[0].attributes.DIVINDX_CY);
-    $("#demoBtn").css("display", "none");
   });
   $(".demographics-table").css("display", "block");
+  scrollToTable();
 };
 
 export function getDemographicsTrenton() {
@@ -86,9 +90,9 @@ export function getDemographicsTrenton() {
     $("#medHincVal").empty().text(JSON.parse(response).results[0].value.FeatureSet[0].features[0].attributes.MEDHINC_CY);
     $("#pciVal").empty().text(JSON.parse(response).results[0].value.FeatureSet[0].features[0].attributes.PCI_CY);
     $("#divIndxVal").empty().text(JSON.parse(response).results[0].value.FeatureSet[0].features[0].attributes.DIVINDX_CY);
-    $("#demoBtn").css("display", "none");
   });
   $(".demographics-table").css("display", "block");
+  scrollToTable();
 };
 
 
