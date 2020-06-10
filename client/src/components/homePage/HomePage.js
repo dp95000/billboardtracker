@@ -82,7 +82,20 @@ export default function HomePage() {
 
             <div className="container-fluid">
                 <div className="row">
+
+                    {/* Left Side Section */}
                     <div className="columns medium-6 left-side">
+                        <h2>Our Custom Billboard Tracking System</h2>
+                        <p>Welcome to our custom billboard inventory management system! Please use the GoogleMap markers to view locations of available billboard signs. Click on
+                        the markers to see information about the selected billboard, and use the demographics buttons below the map
+                        to get detailed information about the Tri-State area to see which advertising markets are right for you.
+                        </p>
+                    </div>
+                    {/* End of Left Side Section */}
+
+
+                    {/* Right Side Section */}
+                    <div className="columns medium-6 right-side">
 
                         <UserInputs />
 
@@ -105,16 +118,60 @@ export default function HomePage() {
                                     <td id="totFemalesVal"></td>
                                 </tr>
                                 <tr>
-                                    <td>Total Households</td>
-                                    <td id="totHHVal"></td>
+                                    <td>Total Daytime Population (residents and workers)</td>
+                                    <td id="dayPopVal"></td>
+                                </tr>
+                                <tr>
+                                    <td>Annual Projected Population Growth 5 years</td>
+                                    <td id="projPopGrowthVal"></td>
+                                </tr>
+                                <tr>
+                                    <td>Total Housing Units</td>
+                                    <td id="totHUVal"></td>
+                                </tr>
+                                <tr>
+                                    <td>Total Projected Housing Units 5 years</td>
+                                    <td id="totProjHUVal"></td>
+                                </tr>
+                                <tr>
+                                    <td>Owner Occupied Housing Units</td>
+                                    <td id="OOHUVal"></td>
+                                </tr>
+                                <tr>
+                                    <td>Projected Owner Occupied Housing Units 5 years</td>
+                                    <td id="projOOHUVal"></td>
+                                </tr>
+                                <tr>
+                                    <td>Renter Occupied Housing Units</td>
+                                    <td id="ROHUVal"></td>
+                                </tr>
+                                <tr>
+                                    <td>Projected Renter Occupied Housing Units 5 years</td>
+                                    <td id="projROHUVal"></td>
+                                </tr>
+                                <tr>
+                                    <td>Median Home Value</td>
+                                    <td id="medHomeVal"></td>
+                                </tr>
+                                <tr>
+                                    <td>Projected Median Home Value 5 years</td>
+                                    <td id="projMedHomeVal"></td>
                                 </tr>
                                 <tr>
                                     <td>Median Household Income</td>
                                     <td id="medHincVal"></td>
                                 </tr>
                                 <tr>
+                                    <td>Annual Projected Median Household Income 5 years</td>
+                                    <td id="projMedHincVal"></td>
+                                </tr>
+                                <tr>
                                     <td>Per Capita Income</td>
                                     <td id="pciVal"></td>
+                                </tr>
+                                <tr>
+                                    <td>Projected Per Capita Income 5 years</td>
+                                    <td id="projPciVal"></td>
                                 </tr>
                                 <tr>
                                     <td>Diversity Index</td>
@@ -126,16 +183,6 @@ export default function HomePage() {
                             </tbody>
                         </table>
 
-                    </div>
-                    {/* End of Left Side Section */}
-
-                    {/* Right Side Section */}
-                    <div className="columns medium-6 right-side">
-                        <h2>Our Custom Billboard Tracking System</h2>
-                        <p>Welcome to our custom billboard inventory management system! Please use the GoogleMap markers to view locations of available billboard signs. Click on
-                        the markers to see information about the selected billboard, and use the demographics buttons below the map
-                        to get detailed information about the Tri-State area to see which advertising markets are right for you.
-                        </p>
                     </div>
                     {/* End of Right Side Section */}
 
