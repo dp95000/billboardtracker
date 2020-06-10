@@ -1,10 +1,10 @@
 module.exports = function(sequealize, DataTypes) {
 
     const billboards = sequealize.define("billboards", {
-        id: {
+       /* id: {
             type: DataTypes.INTEGER,
             allowNull: true,
-        },
+        }, */
 
         lat: {
             type: DataTypes.INTEGER,

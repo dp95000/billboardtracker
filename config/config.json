@@ -1,7 +1,7 @@
 {
   "development": {
     "username": "root",
-    "password": "73BuickRegal",
+    "password": "yourRootPassword",
     "database": "billboardDB",
     "host": "127.0.0.1",
     "port": 3306,
@@ -16,10 +16,10 @@
     "dialect": "mysql"
   },
   "production": {
-    "username": "root",
-    "password": null,
-    "database": "database_production",
-    "host": "127.0.0.1",
+    "username": "hi4vth5sxjz8w0q7",
+    "password": "e7muoz04n3iwrv5z",
+    "database": "h935gyikr53h8813",
+    "host": "i2cpbxbi4neiupid.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     "port": 3306,
     "dialect": "mysql"
   }

@@ -1,3 +1,4 @@
+
 import React, { Component } from 'react';
 
 import { Input, FormGroup, Label, Modal, ModalHeader, ModalBody, ModalFooter, Button, Table } from 'reactstrap';
@@ -91,7 +92,9 @@ class BillboardForm extends Component {
         editBillboardData: { id, lat, lon, location, size, type, avalible, sides, sign_no }, editBillboardmodal: !this.state.editBillboardmodal
     });
 
+
 }
+
 
 
 
@@ -333,6 +336,7 @@ render() {
                 </tbody>
             </Table>
          
+
         </div>
     )
 }
