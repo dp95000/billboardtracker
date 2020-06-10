@@ -184,9 +184,9 @@ export default function HomePage() {
                                 </tr>
                                 <tr>
                                     <td colspan="2">
-                                        {/* <button href="#" id="close_btn" onClick={saveTable} className="button small radius FormSubmit close">Save</button> */}
-                                        <button href="#" id="close_btn" onClick={printTable} className="button small radius FormSubmit close">Print</button>
-                                        <button href="#" id="close_btn" onClick={close_modal} className="button small radius FormSubmit close">Close</button></td>
+                                        {/* <button onClick={saveTable} className="button small radius FormSubmit close">Save</button> */}
+                                        <button onClick={printTable} className="button small radius FormSubmit close">Print</button>
+                                        <button onClick={close_modal} className="button small radius FormSubmit close">Close</button></td>
                                 </tr>
                             </tbody>
 
