@@ -1,6 +1,7 @@
 import React from 'react';
 import { GoogleMap, withScriptjs, withGoogleMap, Marker } from "react-google-maps";
 import UserInputs from "../demographics/UserInputs";
+import { close_modal, printTable, saveTable } from "./jQueryDemographics";
 
 function Map() {
     return (
@@ -99,7 +100,8 @@ export default function HomePage() {
 
                         <UserInputs />
 
-                        <table className="demographics-table">
+                        <table className="demographics-table demogModal" id="demogTable">
+
                             <tbody>
                                 <tr>
                                     <th>Location</th>
@@ -180,7 +182,14 @@ export default function HomePage() {
                                 <tr>
                                     <td colspan="2"><em>(Demographics data source: arcGIS)</em></td>
                                 </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        {/* <button onClick={saveTable} className="button small radius FormSubmit close">Save</button> */}
+                                        <button onClick={printTable} className="button small radius FormSubmit close">Print</button>
+                                        <button onClick={close_modal} className="button small radius FormSubmit close">Close</button></td>
+                                </tr>
                             </tbody>
+
                         </table>
 
                     </div>
@@ -188,7 +197,7 @@ export default function HomePage() {
 
                 </div>
             </div>
-        </div>
+        </div >
 
 
 
