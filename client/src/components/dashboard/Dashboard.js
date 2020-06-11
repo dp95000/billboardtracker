@@ -104,6 +104,7 @@ export default function Dashboard() {
                         <button id="client_add" class="btn_large">Add New</button>
                     </div>
                 </div> */} 
+                </section>
 
                 {/*Logout */}
                 <div className="row logout-section" >
@@ -113,7 +114,7 @@ export default function Dashboard() {
                     </div>
                 </div>
 
-            </section>
+            
             
         </div>
     )
