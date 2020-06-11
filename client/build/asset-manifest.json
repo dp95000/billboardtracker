@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.efdc1727.chunk.css",
+    "main.js": "/static/js/main.cbad1ca7.chunk.js",
+    "main.js.map": "/static/js/main.cbad1ca7.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.a8077680.js",
+    "runtime-main.js.map": "/static/js/runtime-main.a8077680.js.map",
+    "static/js/2.5251a0a1.chunk.js": "/static/js/2.5251a0a1.chunk.js",
+    "static/js/2.5251a0a1.chunk.js.map": "/static/js/2.5251a0a1.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.5eb5c64373e28ad7c0aecf89c8d7086b.js": "/precache-manifest.5eb5c64373e28ad7c0aecf89c8d7086b.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.efdc1727.chunk.css.map": "/static/css/main.efdc1727.chunk.css.map",
+    "static/js/2.5251a0a1.chunk.js.LICENSE.txt": "/static/js/2.5251a0a1.chunk.js.LICENSE.txt",
+    "static/media/billboard-bg.jpg": "/static/media/billboard-bg.18e4dc8b.jpg",
+    "static/media/billboard-icon.png": "/static/media/billboard-icon.25a9bf9a.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a8077680.js",
+    "static/js/2.5251a0a1.chunk.js",
+    "static/css/main.efdc1727.chunk.css",
+    "static/js/main.cbad1ca7.chunk.js"
+  ]
+}

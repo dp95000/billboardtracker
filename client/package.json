@@ -8,7 +8,11 @@
     "@testing-library/user-event": "^7.2.1",
     "bootstrap": "^4.5.0",
     "dotenv": "^8.2.0",
+    "google-map-marker": "^1.2.3",
+    "jquery": "^3.5.1",
     "mapbox-gl": "^1.9.1",
+    "marker": "^0.1.2",
+    "nodemailer": "^6.4.8",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-google-maps": "^9.4.5",
@@ -36,5 +40,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "proxy": "http://localhost:3001"
 }

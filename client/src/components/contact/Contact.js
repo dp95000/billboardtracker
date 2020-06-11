@@ -1,4 +1,6 @@
 import React from 'react';
+import Axios from 'axios';
+import nodemailer from 'nodemailer';
 
 export default function Contact() {
     return (
@@ -13,7 +15,7 @@ export default function Contact() {
                             <input id="senderName" type="text" placeholder="Name" />
                             <input id="senderEmail" type="email" placeholder="Email" />
                             <textarea id="senderMessage" rows="4" cols="50" placeholder="Comments"></textarea>
-                            <button type="button" id="sendform">Submit Form</button>
+                            <button type="submit" id="sendform">Submit Form</button>
                         </form>
                     </div>
                 </div>
