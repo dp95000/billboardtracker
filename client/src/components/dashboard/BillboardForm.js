@@ -1,12 +1,9 @@
-
 import React, { Component } from 'react';
 
 import { Input, FormGroup, Label, Modal, ModalHeader, ModalBody, ModalFooter, Button, Table } from 'reactstrap';
 import axios from 'axios';
 
-// const initialState = {
-//     lat: ""
-// };
+
 
 class BillboardForm extends Component {
     state = {
@@ -46,14 +43,14 @@ class BillboardForm extends Component {
       this.setState({
           NewBillboardmodal: ! this.state.NewBillboardmodal
       })
-  //this.state.NewCustomermodal = true;
+  
   }
 
     toggleEditBillboardModal() {
       this.setState({
           editBillboardmodal: ! this.state.editBillboardmodal
       })
-  //this.state.NewCustomermodal = true;
+  
   }
     addBillboard() {
       axios.post('http://localhost:3000/billboard', this.state.newBillboardData).then((response) => {
@@ -102,7 +99,18 @@ deleteBillboard(id) {
   axios.delete('http://localhost:3000/billboard/' + id).then((response) => {
     this._refreshBillboards();
   })
+
 }
+
+
+
+
+deleteBillboard(id) {
+  axios.delete('http://localhost:3000/billboard/' + id).then((response) => {
+    this._refreshBillboards();
+  })
+}
+
 
 
 
@@ -337,28 +345,13 @@ render() {
             </Table>
          
 
+
+
         </div>
     )
 }
 
-// state = initialState;
 
-// handleChange = event => {
-//     const isCheckbox = event.target.type === "checkbox";
-//     this.setState({
-//       [event.target.lat]: isCheckbox
-//         ? event.target.checked
-//         : event.target.value
-//     });
-// }
-
-// validate = () => {
-//     let latError = "";
-
-//     if (!this.state.lat) {
-//         latError = "please fill in";
-//     }
-// }
  }
 
 export default BillboardForm;

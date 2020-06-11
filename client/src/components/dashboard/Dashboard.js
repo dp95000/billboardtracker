@@ -28,88 +28,17 @@ export default function Dashboard() {
                     </div>
                 </div>
 
-                {/* <div className="row" id="dual-col">
-                    {/* Billboard Locations */}
-                    {/* <div className="columns small-12 medium-12 large-6" id="sec1">
-                        <h2>Billboard Locations</h2> */}
-
-                        {/* Billboard Modal Form*/}
+                
                         <BillboardForm></BillboardForm>
 
-                        {/* Billboard Wrap*/}
-                        {/* <div className="billboard_wrap">
-                            <div className="billboard_listing">
-                                <h3 className="list-title">Billboard Number</h3><button id="bbmodal" onClick={modal} className="edit">Edit</button><button className="delete">Delete</button>
-                            </div>
-                            <div className="billboard_listing">
-                                <h3 className="list-title">Billboard Number</h3><button id="bbmodal" onClick={modal} className="edit">Edit</button><button className="delete">Delete</button>
-                            </div>
-                            <div className="billboard_listing">
-                                <h3 className="list-title">Billboard Number</h3><button id="bbmodal" onClick={modal} className="edit">Edit</button><button className="delete">Delete</button>
-                            </div>
-                            <div className="billboard_listing">
-                                <h3 className="list-title">Billboard Number</h3><button id="bbmodal" onClick={modal} className="edit">Edit</button><button className="delete">Delete</button>
-                            </div>
-                            <div className="billboard_listing">
-                                <h3 className="list-title">Billboard Number</h3><button id="bbmodal" onClick={modal} className="edit">Edit</button><button className="delete">Delete</button>
-                            </div>
-                            <div className="billboard_listing">
-                                <h3 className="list-title">Billboard Number</h3><button id="bbmodal" onClick={modal} className="edit">Edit</button><button className="delete">Delete</button>
-                            </div>
-                            <div className="billboard_listing">
-                                <h3 className="list-title">Billboard Number</h3><button id="bbmodal" onClick={modal} className="edit">Edit</button><button className="delete">Delete</button>
-                            </div>
-                            <div className="billboard_listing">
-                                <h3 className="list-title">Billboard Number</h3><button id="bbmodal" onClick={modal} className="edit">Edit</button><button className="delete">Delete</button>
-                            </div>
-                        </div>
-                        <button id="billboard_add" class="btn_large" onClick={modal}>Add New</button>
-
-                    </div> */}
-                    {/* Clients */}
-                    {/* <div className="columns small-12 medium-12 large-6" id="sec2">
-                        <h2>Clients</h2> */}
-
-                        {/* Billboard Modal Form*/}
+                        
                         <ClientForm></ClientForm>
 
                         
-                         {/* Clients Wrap*/}
-                        {/* <div className="client_wrap">
+                
+                </section>
 
 
-                        {/* Clients Wrap*/}
-//                          <div className="client_wrap">
-
-//                             <div className="client_listing">
-//                                 <h3 className="list-title">Client Name</h3><button id="clmodal" className="edit" onClick={modal2}>Edit</button><button className="delete">Delete</button>
-//                             </div>
-//                             <div className="client_listing">
-//                                 <h3 className="list-title">Client Name</h3><button id="clmodal" className="edit" onClick={modal2}>Edit</button><button className="delete">Delete</button>
-//                             </div>
-//                             <div className="client_listing">
-//                                 <h3 className="list-title">Client Name</h3><button id="clmodal" className="edit" onClick={modal2}>Edit</button><button className="delete">Delete</button>
-//                             </div>
-//                             <div className="client_listing">
-//                                 <h3 className="list-title">Client Name</h3><button id="clmodal" className="edit" onClick={modal2}>Edit</button><button className="delete">Delete</button>
-//                             </div>
-//                             <div className="client_listing">
-//                                 <h3 className="list-title">Client Name</h3><button id="clmodal" className="edit" onClick={modal2}>Edit</button><button className="delete">Delete</button>
-//                             </div>
-//                             <div className="client_listing">
-//                                 <h3 className="list-title">Client Name</h3><button id="clmodal" className="edit" onClick={modal2}>Edit</button><button className="delete">Delete</button>
-//                             </div>
-//                             <div className="client_listing">
-//                                 <h3 className="list-title">Client Name</h3><button id="clmodal" className="edit" onClick={modal2}>Edit</button><button className="delete">Delete</button>
-//                             </div>
-//                             <div className="client_listing">
-//                                 <h3 className="list-title">Client Name</h3><button id="clmodal" className="edit" onClick={modal2}>Edit</button><button className="delete">Delete</button>
-//                             </div>
-
-//                         </div>
-//                         <button id="client_add" class="btn_large" onClick={modal2}>Add New</button>
-//                     </div>
-//                 </div> */} 
 
                 {/*Logout */}
                 <div className="row logout-section" >
@@ -119,7 +48,12 @@ export default function Dashboard() {
                     </div>
                 </div>
 
-            </section>
+
+            
+            
+
+            
+
 
         </div>
     )
