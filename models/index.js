@@ -10,12 +10,18 @@ const env = process.env.NODE_ENV || "development";
 const config = require(__dirname + "/../config/config.json")[env];
 if (config.use_env_variable) {
 <<<<<<< HEAD
+<<<<<<< HEAD
     var sequelize = new Sequelize(process.env[config.use_env_variable]);
 =======
 
      var sequelize = new Sequelize(process.env[config.use_env_variable]);
 
 >>>>>>> 2e3acff3466654b25217229339eb120e8fedd304
+=======
+
+     var sequelize = new Sequelize(process.env[config.use_env_variable]);
+
+>>>>>>> 0600e2f7b4504a98e31be8cb818c1559dd960c4c
 } else {
      var sequelize = new Sequelize(config.database, config.username, config.password, config);
 }
