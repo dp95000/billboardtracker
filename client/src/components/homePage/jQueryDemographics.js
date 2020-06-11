@@ -1,7 +1,25 @@
 import $ from "jquery";
 
 function scrollToTable() {
-  window.scrollTo(246, 622);
+  const demogtable = document.getElementById("demogTable");
+  demogtable.scrollIntoView();
+}
+
+export function printTable() {
+  const itemToPrint = document.getElementById("demogTable");
+  const newWin = window.open("");
+  newWin.document.write(itemToPrint.outerHTML);
+  newWin.print();
+  newWin.close();
+}
+
+export function saveTable() {
+  //need to research best implementation of this
+}
+
+export function close_modal() {
+  var close_modal = document.getElementById("demogTable");
+  close_modal.style.display = "none";
 }
 
 export function getDemographicsPhilly() {
@@ -25,9 +43,20 @@ export function getDemographicsPhilly() {
     $("#totPopVal").empty().text(JSON.parse(response).results[0].value.FeatureSet[0].features[0].attributes.TOTPOP_CY);
     $("#totMalesVal").empty().text(JSON.parse(response).results[0].value.FeatureSet[0].features[0].attributes.TOTMALES);
     $("#totFemalesVal").empty().text(JSON.parse(response).results[0].value.FeatureSet[0].features[0].attributes.TOTFEMALES);
-    $("#totHHVal").empty().text(JSON.parse(response).results[0].value.FeatureSet[0].features[0].attributes.TOTHH_CY);
+    $("#dayPopVal").empty().text(JSON.parse(response).results[0].value.FeatureSet[0].features[0].attributes.DPOP_CY);
+    $("#projPopGrowthVal").empty().text(JSON.parse(response).results[0].value.FeatureSet[0].features[0].attributes.POPGRWCYFY + "%");
+    $("#totHUVal").empty().text(JSON.parse(response).results[0].value.FeatureSet[0].features[0].attributes.TOTHU_CY);
+    $("#totProjHUVal").empty().text(JSON.parse(response).results[0].value.FeatureSet[0].features[0].attributes.TOTHU_FY);
+    $("#OOHUVal").empty().text(JSON.parse(response).results[0].value.FeatureSet[0].features[0].attributes.OWNER_CY);
+    $("#projOOHUVal").empty().text(JSON.parse(response).results[0].value.FeatureSet[0].features[0].attributes.OWNER_FY);
+    $("#ROHUVal").empty().text(JSON.parse(response).results[0].value.FeatureSet[0].features[0].attributes.RENTER_CY);
+    $("#projROHUVal").empty().text(JSON.parse(response).results[0].value.FeatureSet[0].features[0].attributes.RENTER_FY);
+    $("#medHomeVal").empty().text(JSON.parse(response).results[0].value.FeatureSet[0].features[0].attributes.MEDVAL_CY);
+    $("#projMedHomeVal").empty().text(JSON.parse(response).results[0].value.FeatureSet[0].features[0].attributes.MEDVAL_FY);
     $("#medHincVal").empty().text(JSON.parse(response).results[0].value.FeatureSet[0].features[0].attributes.MEDHINC_CY);
+    $("#projMedHincVal").empty().text(JSON.parse(response).results[0].value.FeatureSet[0].features[0].attributes.MHIGRWCYFY + "%");
     $("#pciVal").empty().text(JSON.parse(response).results[0].value.FeatureSet[0].features[0].attributes.PCI_CY);
+    $("#projPciVal").empty().text(JSON.parse(response).results[0].value.FeatureSet[0].features[0].attributes.PCI_FY);
     $("#divIndxVal").empty().text(JSON.parse(response).results[0].value.FeatureSet[0].features[0].attributes.DIVINDX_CY);
   });
   $(".demographics-table").css("display", "block");
@@ -56,9 +85,20 @@ export function getDemographicsWilmington() {
     $("#totPopVal").empty().text(JSON.parse(response).results[0].value.FeatureSet[0].features[0].attributes.TOTPOP_CY);
     $("#totMalesVal").empty().text(JSON.parse(response).results[0].value.FeatureSet[0].features[0].attributes.TOTMALES);
     $("#totFemalesVal").empty().text(JSON.parse(response).results[0].value.FeatureSet[0].features[0].attributes.TOTFEMALES);
-    $("#totHHVal").empty().text(JSON.parse(response).results[0].value.FeatureSet[0].features[0].attributes.TOTHH_CY);
+    $("#dayPopVal").empty().text(JSON.parse(response).results[0].value.FeatureSet[0].features[0].attributes.DPOP_CY);
+    $("#projPopGrowthVal").empty().text(JSON.parse(response).results[0].value.FeatureSet[0].features[0].attributes.POPGRWCYFY + "%");
+    $("#totHUVal").empty().text(JSON.parse(response).results[0].value.FeatureSet[0].features[0].attributes.TOTHU_CY);
+    $("#totProjHUVal").empty().text(JSON.parse(response).results[0].value.FeatureSet[0].features[0].attributes.TOTHU_FY);
+    $("#OOHUVal").empty().text(JSON.parse(response).results[0].value.FeatureSet[0].features[0].attributes.OWNER_CY);
+    $("#projOOHUVal").empty().text(JSON.parse(response).results[0].value.FeatureSet[0].features[0].attributes.OWNER_FY);
+    $("#ROHUVal").empty().text(JSON.parse(response).results[0].value.FeatureSet[0].features[0].attributes.RENTER_CY);
+    $("#projROHUVal").empty().text(JSON.parse(response).results[0].value.FeatureSet[0].features[0].attributes.RENTER_FY);
+    $("#medHomeVal").empty().text(JSON.parse(response).results[0].value.FeatureSet[0].features[0].attributes.MEDVAL_CY);
+    $("#projMedHomeVal").empty().text(JSON.parse(response).results[0].value.FeatureSet[0].features[0].attributes.MEDVAL_FY);
     $("#medHincVal").empty().text(JSON.parse(response).results[0].value.FeatureSet[0].features[0].attributes.MEDHINC_CY);
+    $("#projMedHincVal").empty().text(JSON.parse(response).results[0].value.FeatureSet[0].features[0].attributes.MHIGRWCYFY + "%");
     $("#pciVal").empty().text(JSON.parse(response).results[0].value.FeatureSet[0].features[0].attributes.PCI_CY);
+    $("#projPciVal").empty().text(JSON.parse(response).results[0].value.FeatureSet[0].features[0].attributes.PCI_FY);
     $("#divIndxVal").empty().text(JSON.parse(response).results[0].value.FeatureSet[0].features[0].attributes.DIVINDX_CY);
   });
   $(".demographics-table").css("display", "block");
@@ -86,9 +126,20 @@ export function getDemographicsTrenton() {
     $("#totPopVal").empty().text(JSON.parse(response).results[0].value.FeatureSet[0].features[0].attributes.TOTPOP_CY);
     $("#totMalesVal").empty().text(JSON.parse(response).results[0].value.FeatureSet[0].features[0].attributes.TOTMALES);
     $("#totFemalesVal").empty().text(JSON.parse(response).results[0].value.FeatureSet[0].features[0].attributes.TOTFEMALES);
-    $("#totHHVal").empty().text(JSON.parse(response).results[0].value.FeatureSet[0].features[0].attributes.TOTHH_CY);
+    $("#dayPopVal").empty().text(JSON.parse(response).results[0].value.FeatureSet[0].features[0].attributes.DPOP_CY);
+    $("#projPopGrowthVal").empty().text(JSON.parse(response).results[0].value.FeatureSet[0].features[0].attributes.POPGRWCYFY + "%");
+    $("#totHUVal").empty().text(JSON.parse(response).results[0].value.FeatureSet[0].features[0].attributes.TOTHU_CY);
+    $("#totProjHUVal").empty().text(JSON.parse(response).results[0].value.FeatureSet[0].features[0].attributes.TOTHU_FY);
+    $("#OOHUVal").empty().text(JSON.parse(response).results[0].value.FeatureSet[0].features[0].attributes.OWNER_CY);
+    $("#projOOHUVal").empty().text(JSON.parse(response).results[0].value.FeatureSet[0].features[0].attributes.OWNER_FY);
+    $("#ROHUVal").empty().text(JSON.parse(response).results[0].value.FeatureSet[0].features[0].attributes.RENTER_CY);
+    $("#projROHUVal").empty().text(JSON.parse(response).results[0].value.FeatureSet[0].features[0].attributes.RENTER_FY);
+    $("#medHomeVal").empty().text(JSON.parse(response).results[0].value.FeatureSet[0].features[0].attributes.MEDVAL_CY);
+    $("#projMedHomeVal").empty().text(JSON.parse(response).results[0].value.FeatureSet[0].features[0].attributes.MEDVAL_FY);
     $("#medHincVal").empty().text(JSON.parse(response).results[0].value.FeatureSet[0].features[0].attributes.MEDHINC_CY);
+    $("#projMedHincVal").empty().text(JSON.parse(response).results[0].value.FeatureSet[0].features[0].attributes.MHIGRWCYFY + "%");
     $("#pciVal").empty().text(JSON.parse(response).results[0].value.FeatureSet[0].features[0].attributes.PCI_CY);
+    $("#projPciVal").empty().text(JSON.parse(response).results[0].value.FeatureSet[0].features[0].attributes.PCI_FY);
     $("#divIndxVal").empty().text(JSON.parse(response).results[0].value.FeatureSet[0].features[0].attributes.DIVINDX_CY);
   });
   $(".demographics-table").css("display", "block");
