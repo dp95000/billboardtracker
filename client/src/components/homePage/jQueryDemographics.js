@@ -1,7 +1,25 @@
 import $ from "jquery";
 
 function scrollToTable() {
-  window.scrollTo(246, 622);
+  const demogtable = document.getElementById("demogTable");
+  demogtable.scrollIntoView();
+}
+
+export function printTable() {
+  const itemToPrint = document.getElementById("demogTable");
+  const newWin = window.open("");
+  newWin.document.write(itemToPrint.outerHTML);
+  newWin.print();
+  newWin.close();
+}
+
+export function saveTable() {
+  //need to research best implementation of this
+}
+
+export function close_modal() {
+  var close_modal = document.getElementById("demogTable");
+  close_modal.style.display = "none";
 }
 
 export function getDemographicsPhilly() {
@@ -127,6 +145,4 @@ export function getDemographicsTrenton() {
   $(".demographics-table").css("display", "block");
   scrollToTable();
 };
-
-
 
