@@ -5,10 +5,10 @@ import About from '../about/About';
 import Contact from '../contact/Contact';
 import Login from '../login/Login';
 import Dashboard from '../dashboard/Dashboard';
-
+import Signup from '../login/Signup';
 
 export default function Main() {
-    return(
+    return (
         <Router>
             <Switch>
                 <Route exact path="/" component={HomePage} />
@@ -16,6 +16,7 @@ export default function Main() {
                 <Route exact path="/contact" component={Contact} />
                 <Route exact path="/login" component={Login} />
                 <Route exact path="/dashboard" component={Dashboard} />
+                <Route exact path="/signup" component={Signup} />
             </Switch>
         </Router>
     )
