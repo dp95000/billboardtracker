@@ -1,6 +1,5 @@
 import React from 'react';
 import SignupFunction from '../loginfunction/SignupFunction';
-var passport = require("passport");
 
 export default function Signup() {
   return (
@@ -9,7 +8,7 @@ export default function Signup() {
       <section id="content">
         <div className="row">
           <div className="columns medium-12" id="login">
-            <h2>Create an account</h2>
+            <h2>Create an Account</h2>
             <form className="login" id="dashboard-form">
               <input type="text" className="form-control" id="name-input" placeholder="Name" />
               <input type="email" className="form-control" id="email-input" placeholder="Email" />
