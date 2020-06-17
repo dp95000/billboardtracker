@@ -146,5 +146,3 @@ export function getDemographicsTrenton() {
   scrollToTable();
 };
 
-
-
