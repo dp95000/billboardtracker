@@ -1,4 +1,7 @@
 // Requiring our models and passport as we've configured it
+
+require("dotenv").config();
+
 let db = require("../models");
 let passport = require("../config/passport");
 const nodemailer = require("nodemailer");
@@ -33,16 +36,14 @@ module.exports = (app) => {
     // If the user has valid login credentials, send them to the members page.
     // Otherwise the user will be sent an error
     app.post("/api/login", passport.authenticate("local"), function (req, res) {
-        res.json({
-            email: req.user.email,
-            id: req.user.id
-        });
+        res.json(req.user);
     });
 
     // Route for signing up a user. The user's password is automatically hashed and stored securely thanks to
     // how we configured our Sequelize User Model. If the user is created successfully, proceed to log the user in,
     // otherwise send back an error
     app.post("/api/signup", function (req, res) {
+        console.log("hi");
         db.User.create({
             email: req.body.email,
             password: req.body.password,
@@ -72,7 +73,8 @@ module.exports = (app) => {
             // Sending back a password, even a hashed password, isn't a good idea
             res.json({
                 email: req.user.email,
-                id: req.user.id
+                id: req.user.id,
+                name: req.user.name
             });
         }
     });
