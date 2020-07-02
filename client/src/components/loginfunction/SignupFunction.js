@@ -24,6 +24,7 @@ export default function SignupFunction(event) {
   nameInput.value = "";
   emailInput.value = "";
   passwordInput.value = "";
+  window.location.replace("/login");
 
   //signupUser saves userData to our database and redirects us to the Login page
   function signupUser(name, email, password) {
@@ -32,8 +33,5 @@ export default function SignupFunction(event) {
       email: email,
       password: password
     })
-      .then(function () {
-        window.location.replace("/login");
-      });
   };
 };
