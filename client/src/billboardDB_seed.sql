@@ -1,4 +1,3 @@
-DROP DATABASE IF EXISTS billboardDB;
 create database billboardDB;
 use billboardDB;
 CREATE TABLE billboards
