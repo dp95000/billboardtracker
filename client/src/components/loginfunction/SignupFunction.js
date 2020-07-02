@@ -1,3 +1,9 @@
+<<<<<<< HEAD
+=======
+// take user to login page
+//store new account credentials in DB
+
+>>>>>>> 42093ab24458ddd100ee894080b5cdf55221c6d8
 import $ from 'jquery';
 
 export default function SignupFunction(event) {
@@ -19,11 +25,20 @@ export default function SignupFunction(event) {
     return;
   }
 
+<<<<<<< HEAD
+=======
+  //signupUser saves userData to our database and redirects us to the Login page
+  function signupUser(name, email, password) {
+    window.location.replace("/login");
+  }
+
+>>>>>>> 42093ab24458ddd100ee894080b5cdf55221c6d8
   // If we have a name, email and password we run the signupUser function and clear the form
   signupUser(userData.name, userData.email, userData.password);
   nameInput.value = "";
   emailInput.value = "";
   passwordInput.value = "";
+<<<<<<< HEAD
   window.location.replace("/login");
 
   //signupUser saves userData to our database and redirects us to the Login page
@@ -34,4 +49,6 @@ export default function SignupFunction(event) {
       password: password
     })
   };
+=======
+>>>>>>> 42093ab24458ddd100ee894080b5cdf55221c6d8
 };
