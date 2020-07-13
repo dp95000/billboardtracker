@@ -11,6 +11,7 @@
     "jquery": "^3.5.1",
     "mapbox-gl": "^1.9.1",
     "marker": "^0.1.2",
+    "nodemailer": "^6.4.8",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-google-maps": "^9.4.5",
