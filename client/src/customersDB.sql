@@ -1,4 +1,3 @@
-DROP DATABASE IF EXISTS customersDB;
 create database customersDB;
 use customersDB;
 

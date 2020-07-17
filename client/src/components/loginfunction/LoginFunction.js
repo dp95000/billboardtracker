@@ -36,7 +36,6 @@ export default function LoginFunction(event) {
 
     function handleLoginErr(err) {
         console.log("fail");
-        alert("Invalid login. Please try again.");
         if (document.querySelector("#alert .msg")) {
             document.querySelector("#alert .msg").text(err.responseJSON);
         }
