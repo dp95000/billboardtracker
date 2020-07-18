@@ -1,6 +1,3 @@
-// take user to login page
-//store new account credentials in DB
-
 import $ from 'jquery';
 
 export default function SignupFunction(event) {
@@ -22,14 +19,19 @@ export default function SignupFunction(event) {
     return;
   }
 
-  //signupUser saves userData to our database and redirects us to the Login page
-  function signupUser(name, email, password) {
-    window.location.replace("/login");
-  }
-
   // If we have a name, email and password we run the signupUser function and clear the form
   signupUser(userData.name, userData.email, userData.password);
   nameInput.value = "";
   emailInput.value = "";
   passwordInput.value = "";
+  window.location.replace("/login");
+
+  //signupUser saves userData to our database and redirects us to the Login page
+  function signupUser(name, email, password) {
+    $.post("/api/signup", {
+      name: name,
+      email: email,
+      password: password
+    })
+  };
 };
