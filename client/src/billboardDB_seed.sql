@@ -705,18 +705,18 @@ CREATE TABLE billboards
 );
 
       INSERT INTO users
-        (user_name, password)
+        (email, password)
       VALUES
         ('davepollan@gmail.com', 'Pass1234' );
       INSERT INTO users
-        (user_name, password)
+        (email, password)
       VALUES
         ('ianclark226@gmail.com', 'Pass1234' );
       INSERT INTO users
-        (user_name, password)
+        (email, password)
       VALUES
         ('tyjenki@gmail.com', 'Pass1234' );
       INSERT INTO users
-        (user_name, password)
+        (email, password)
       VALUES
         ('delphindidier0@gmail.com', 'Pass1234' );
