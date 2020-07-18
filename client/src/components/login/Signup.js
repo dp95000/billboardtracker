@@ -9,6 +9,7 @@ export default function Signup() {
         <div className="row">
           <div className="columns medium-12" id="login">
             <h2>Create an Account</h2>
+            <p>Already have an account? <a href="/login">Log in</a></p>
             <form className="login" id="dashboard-form">
               <input type="text" className="form-control" id="name-input" placeholder="Name" />
               <input type="email" className="form-control" id="email-input" placeholder="Email" />
