@@ -2,6 +2,7 @@ import React from 'react';
 import BillboardForm from './BillboardForm';
 import ClientForm from './ClientForm';
 import BillboardBG from '../../images/billboard-bg.jpg';
+import LogoutUser from '../loginfunction/LogoutFunction';
 
 {/* Function to Open Billboard Modal */ }
 function modal() {
@@ -44,7 +45,7 @@ export default function Dashboard() {
             <div className="row logout-section" >
                 <div className="columns medium-12">
                     <h1>Finished Working?</h1>
-                    <button id="logout">Log Out</button>
+                    <button id="logout" onClick={LogoutUser}>Log Out</button>
                 </div>
             </div>
 
